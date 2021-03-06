@@ -1,0 +1,2 @@
+# xmTradeReporter
+XMでのFX取引履歴のメールから自動で取引CSVを生成し、指定されたS3のBUCKETに保存する。
