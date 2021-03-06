@@ -77,7 +77,7 @@ XMTrades = class {
     let parsed_html = Parser.data(this.one_rows).from('<td>').to('</td>').iterate();
     let parsed_dates = Parser.data(this.one_rows).from('<td nowrap>').to('</td>').iterate();
     let parsed_elements = (parsed_html+','+parsed_dates).split(',')
-    if (parsed_elements.length !== 13.0) {delete this.trades;return}
+    if (parsed_elements.length !== this.trades_keys.length) {delete this.trades;return}
     for(let i=0; i<parsed_elements.length; i++) {
       if (this.trades_keys[i].includes('Time')) this.trades[this.trades_keys[i]] = parsed_elements[i].replace('&nbsp;','') 
       else this.trades[this.trades_keys[i]] = parsed_elements[i].replace(' ','')
