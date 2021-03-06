@@ -1,0 +1,22 @@
+{
+  "timeZone": "America/New_York",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "S3",
+        "libraryId": "1Qx-smYQLJ2B6ae7Pncbf_8QdFaNm0f-br4pbDg0DXsJ9mZJPdFcIEkw_",
+        "version": "4"
+      },
+      {
+        "userSymbol": "Parser",
+        "libraryId": "1Mc8BthYthXx6CoIz90-JiSzSafVnT6U3t0z_W3hLTAX5ek4w0G_EIrNw",
+        "version": "8"
+      }
+    ]
+  },
+  "executionApi": {
+    "access": "MYSELF"
+  }
+}
