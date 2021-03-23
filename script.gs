@@ -36,6 +36,8 @@ function XMTradeHistoriesMail2Csv() {
   ordered_keys = [
     'Ticket','Open Time','Type','Size','Item','OpenPrice','S/L','T/P','Close Time','ClosePrice','Commission','Swap','Profit'
   ]
+  // 確定した取引がないときに、ヘッダーだけのCSVが送られる問題があったため。
+  if (result_json.length === 0) return;
   return json2csv(result_json,ordered_keys)
 }
 
