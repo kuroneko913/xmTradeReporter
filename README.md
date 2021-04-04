@@ -1,6 +1,7 @@
 # xmTradeReporter
 XMでのFX取引履歴のメールから自動で取引CSVを生成し、指定されたS3のBUCKETに保存する。
-このリポジトリは、GoogleChromeの拡張である[Google Apps Script GitHub アシスタント](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo)によって作成、管理されています。
+
+このリポジトリは、GoogleChromeの拡張である[Google Apps Script GitHub アシスタント](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo)によって作成、管理されている。
 
 * 旧AppsScriptエディタのスクリプトのプロパティにAWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_BUCKET_NAME をそれぞれ設定して使用する。
 * AWSのアカウントは、S3への書き込みのみを許可したUserまたはロールを作成することを前提にしている。
